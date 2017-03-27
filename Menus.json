@@ -1,0 +1,34 @@
+﻿{
+  "catgories": [
+    {
+	  "code": "mh",
+      "display": "Màn hình",
+      "url": "ManHinhs"
+    },
+    {
+	  "code": "hd",
+      "display": "Hàng đợi",
+      "url": "HangDois"
+    },
+    {
+	  "code": "nth",
+      "display": "Nơi Thực Hiện",
+      "url": "NoiThucHiens"
+    },
+	{
+	  "code": "hdnth",
+      "display": "HĐ - Nơi thực hiện",
+      "url": "HangDoi_NoiThucHien"
+    },       
+    {
+	  "code": "ts",
+      "display": "Tham số",
+      "url": "ThamSoes"
+    },       
+    {
+	  "code": "db",
+      "display": "DashBoard",
+      "url": "DashBoard"
+    }
+  ]
+}
