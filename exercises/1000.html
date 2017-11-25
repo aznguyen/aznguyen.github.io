@@ -1,0 +1,64 @@
+<html>
+    <head>
+        <title>1000 Exercises</title>
+    </head>
+    <body>
+        <div id="ex1">
+        <h3>1. Tính S(n) = 1 + 2 + 3 + ... + n.</h5>        
+        <input id="ex1_btshow" type="button" value="Show" onclick="exercise_show(1)">
+        </br>
+        </br>
+        <div class="clear"></div>
+        <div id="ex1_body" style="display: none;">
+        n = <input id="ex1_1" type="text" value="">
+        <input type="button" value="Submit" onclick="exercise1()">
+        <h4>Result</h5> 
+        S(n) = <input id="ex1_result" type="text" value="">
+        </div>
+        </div>  
+        <div id="ex2">
+        <h3>2. Tính S(n) = 1^2 + 2^2 + 3^2 + ... + n^2.</h5>        
+        <input id="ex2_btshow" type="button" value="Show" onclick="exercise_show(2)">
+        </br>
+        </br>
+        <div class="clear"></div>
+        <div id="ex2_body" style="display: none;">
+        n = <input id="ex2_1" type="text" value="">
+        <input type="button" value="Submit" onclick="exercise2()">
+        <h4>Result</h5> 
+        S(n) = <input id="ex2_result" type="text" value="">
+        </div>
+        </div>  
+    </body>
+    <script>
+        function exercise_show(n){
+            var id = "ex"+n+"_body";
+            var ex1 = document.getElementById(id);
+            var bt = "ex"+n+"_btshow";
+            var ex1_btshow = document.getElementById(bt);
+            if(ex1.style.display == "none"){
+                ex1.style.display = "block";
+                ex1_btshow.value = "Hide";
+            }else {
+                ex1.style.display = "none";
+                ex1_btshow.value = "Show";
+            }
+        };
+         function exercise1() {
+            var n =  document.getElementById("ex1_1").value;
+            var s = 0;
+            for (var i = 0; i <= n; i++){
+                s += i;
+            };
+             document.getElementById("ex1_result").value = s;
+        };
+        function exercise2() {
+            var n =  document.getElementById("ex2_1").value;
+            var s = 0;
+            for (var i = 0; i <= n; i++){
+                s += Math.pow(i,2);
+            };
+             document.getElementById("ex2_result").value = s;
+        };
+    </script>
+</html>
